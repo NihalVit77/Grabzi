@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+}
+
+#Profile{
+    font-size: 45px; 
+    font-weight: 650;
+    margin: 20px 20px 20px 40px;
+}
+
+.profileinfo{
+    height: 166px;
+    width: 1344px;
+    border: 1.5px solid #92E05E;
+    border-radius: 200px;
+    margin-left: 25px;
+    margin-right: 10px;
+    background-color: white;
+    display: flex;
+    position: relative;
+
+}
+
+#profile_photo{
+    height: 140px;
+    width: 140px;
+    background-color: #92E05E;
+    border: 1.5px solid #dadada;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+#info_details{
+    height: 134px;
+    width: 500px;
+    margin: 30px 20px 5px 20px;
+    line-height: 20px;
+}
+
+#name{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#number{
+    font-size: 28px;
+    font-weight: 500;
+}
+#email{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#user_savings{
+    height: 166px;
+    width: 266px;
+    background-color: #92E05E;
+    position: absolute;
+    left: 91%;
+    transform: translateX(-50%);    
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    line-height: 30px;
+    
+}
+
+#user_savings p{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#user_savings h1{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+}
+
+#data{
+    margin: 30px;
+}
+
+#menu{
+    height: 900px;
+    width: 1344px;
+    margin-left: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.options{
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1.5px solid #D4D4D4;
+    border-radius: 12px;
+    margin-top: 15px;
+}
