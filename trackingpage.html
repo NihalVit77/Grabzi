@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Order Tracking</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+        <link rel="stylesheet" href="trackingstyle.css">
+    </head>
+    <body>
+    <div class="tracking-container">
+      <h2>Track Order</h2>
+
+      <div class="status_info">
+        <div class="Order_Status">
+        <p id="status">Status</p>
+        <br>
+        <p id="status_postion">Order Placed</p>
+        </div>
+        <div class="Delivery_info">
+          <p id="delivery_time">Delivery in next 11 mins</p><br>
+          <p id="delivery_timedate">1:43 pm, 16th Nov</p>
+        </div>
+    </div>
+      </div>
+      <div id="order_id">Order id: #4503</div>
+      <div class="order-tracker">
+  <div class="progress-container">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <div class="steps">
+      <div class="step active">
+        <i class="fas fa-shopping-bag"></i>
+        <p>Order</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-box"></i>
+        <p>Packed</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-shipping-fast"></i>
+        <p>Shipped</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-box-open"></i>
+        <p>Delivered</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Order">
+    <div class="otp-section">
+      <div class="otp-text">
+        <p>OTP :</p>
+        <h2>786095</h2>
+      </div>
+      <div class="delivery-partner">
+        <p>Delivery Partner</p>
+        <h2 id="delivery_partner">Raafae Abdul</h2>
+      </div>
+    </div>
+    <div class="container">
+    <div class="order-summary">
+      <div class="summary-header">
+        <h3>Order Summary</h3>
+        <span class="paid">Paid</span>
+      </div>
+      <ul>
+        <li>Red Bull Energy Drink <strong>(2x)</strong></li>
+        <li>Fresh Dragon Fruit Red Imported <strong>(3x)</strong></li>
+        <li>Kwality Wall Vanilla Ice-Cream <strong>(1x)</strong></li>
+      </ul>
+      <div class="total">
+        <strong>Total</strong>
+        <span>₹575</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>   
+    <script src="track.js"></script>
+    <script>
+      document.getElementById("delivery_partner").textContent='Nihal Prasad';
+    </script>
+    </body>
+</html>

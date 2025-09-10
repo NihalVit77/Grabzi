@@ -1,0 +1,296 @@
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #ffffff 50%, #92E05E 100%);
+  min-height: 100vh;
+  display: flex;
+}
+
+.tracking-container {
+  width: 100%;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+}
+
+h2 {
+  position: absolute;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+.status_info{
+  width: 100%;
+  height: 150px;
+  background-color: #ffff;
+  border: 1.5px solid #D4D4D4;
+  border-radius: 12px;
+  margin-top: 75px; 
+  line-height: 30px;
+  display: flex;
+}
+
+#status{
+  margin-left: 20px;
+  margin-top: 25px;
+  font-size: 28px;
+}
+
+#status_postion{
+    margin-left: 20px;
+    font-size: 38px;
+    font-weight: 600;
+    color: #92E05E;
+}
+
+.Delivery_info{
+    margin-top: 25px;
+    line-height: 30px;
+    position: relative;
+    left: 54%;
+    align-content: flex-start;
+    text-align: right;
+}
+
+#delivery_time{
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+
+#delivery_timedate{
+   font-size: 38px;
+   font-weight: 500;
+}
+
+#order_id{
+  height: 26px;
+  width: 200px;
+  background-color: #92E05E;
+  color: #000;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  position: absolute;
+  top: 300px;
+  margin-left: 40px;
+}
+
+.order-tracker {
+  width: 182vh;
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+  border: 1.5px solid #D4D4D4;
+  padding: 30px;
+  border-radius: 12px;
+  border-top-left-radius: 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 325px;
+  margin-left: 40px;
+}
+
+.progress-container {
+  position: relative;
+  padding-top: 40px;
+}
+
+.progress-bar {
+  position: relative;
+  height: 8px;
+  width: 140vh;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin: 0px 0 0 145px;
+  position: absolute;
+  top: 40px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #6cd66c;
+  width: 0;
+  border-radius: 4px;
+  transition: width 10s ease-in-out;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -22px;
+  position: relative;
+  z-index: 1;
+}
+
+.step {
+  text-align: center;
+  flex: 1;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.step i {
+  font-size: 40px;
+  background: white;
+  padding: 8px;
+  border-radius: 100%;
+  border: 2px solid #e0e0e0;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.step.active i {
+  color: #6cd66c;
+  border-color: #6cd66c;
+}
+
+.step.active {
+  color: #6cd66c;
+}
+
+.step p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.container {
+  width:  80vh;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: absolute;
+  top: 490px;
+}
+
+.otp-section {
+  background-color: #a8f08c;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  align-items: center;
+  border-radius: 12px;
+  height: 12vh;
+  width: 80vh;
+  position: absolute;
+  top: 485px;
+  left: 745px;
+  text-align: center;
+  
+}
+
+
+.otp-text p {
+  font-size: 18px;
+  margin-top: -30px;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.otp-text h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #0c440c;
+  font-weight: 700;
+}
+
+.delivery-partner{
+  width: 30vh;
+ margin-right: 5px;
+ display: flex;
+ justify-content: flex-end;
+}
+
+.delivery-partner p {
+  margin: 0;
+  font-size: 18px;
+  color: #444;
+  margin-top: -30px;
+}
+
+.delivery-partner h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #1a3e1a;
+  margin-right: -10px;
+}
+
+.order-summary {
+  padding: 20px;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.paid {
+  background-color: #9effa2;
+  color: #1b6b1b;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.total {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a8f08c;
+  padding: 15px 20px;
+  border-radius: 0 0 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.total strong{
+  font-weight: 500;
+}
+
+.Order{
+  position: absolute;
+  left: 38px;
+  top: 50px;
+}
+
